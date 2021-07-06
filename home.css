@@ -25,10 +25,10 @@ body{
     top: 50px;
     right: 100px;
     text-decoration: none;
-    color: #FFD700;
+    color: #fff;
     right: 100px;
     font-family: 'Dancing Script', cursive;
-    font-size: 24px;
+    font-size: 20px;
     cursor: pointer;
     font-weight: bold;
 
@@ -43,30 +43,34 @@ body{
     transform: translateX(-100%);
 }
 .menu .button{
-    color: #FFD700;
+    color: #fff;
 
 }
 .ul{
     position: absolute;
     left: 20%;
     display: flex;
-    width: 300px;
+    /* width: 300px; */
     justify-content: center;
     align-items: left;
     height: 100vh;
-    flex-direction: column;
+    /* flex-direction: column; */
 }
 .ul li{
     margin: 20px 0;
     z-index: 2;
-
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
 }
 .ul li a{
     text-decoration: none;
     color: white;
-    transition: 2s;
-    font-family: 'Monument';
+    opacity:0.3;
+    /* transition: 2s; */
+    font-family: 'Otomanopee One', sans-serif;
     font-size: 50px;
+    margin: 0px 10px;
     text-transform: uppercase;
     font-weight: 500;
     mix-blend-mode: difference;
@@ -76,7 +80,8 @@ body{
     position: absolute;
     bottom: 0;
     display: flex;
-    height: 80px;
+    justify-content: center;
+    height:100px;
     width: 100%;
 
 }
@@ -92,7 +97,7 @@ body{
 .social ul li a{
     text-decoration: none;
     color: white;
-    font-family: 'Monument';
+    font-family: 'Otomanopee One', sans-serif;
     font-size: 18px;
     text-transform: uppercase;
     font-weight: lighter;
@@ -153,10 +158,8 @@ body{
     transition: 1s ease-in-out;
 }
 .ul li a:hover{
-    transition: 2s;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px white;
-    font-style: italic;
+
+    opacity:1;
 }
 .webLogo{
     width: 150px;
