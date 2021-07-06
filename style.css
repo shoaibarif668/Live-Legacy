@@ -7,10 +7,10 @@ html, body {
     overflow: hidden;
 }
 
-body {
+/* body {
     background: url(hero.jpg) no-repeat 50% 50%;
     background-size: cover;
-}
+} */
 
 img {
     width: 100%;
@@ -41,6 +41,10 @@ img {
 .logo .webLogo{
     width: 150px;
     filter: brightness(0) invert(1);
+}
+a{
+    text-decoration:none;
+    color: white;
 }
 .contact {
     position: fixed;
@@ -132,11 +136,19 @@ button {
     font-size: 12px !important;
     letter-spacing: 4px;
     font-weight: 300;
+    cursor: pointer;
 }
 
-#one {
+.button {
     background: none;
     border: .3pt solid rgba(255, 255, 255, 0.3);
+    margin-right: 10px !important;
+    padding: 14px 30px;
+    color: #fff;
+    font-size: 12px !important;
+    letter-spacing: 4px;
+    font-weight: 300;
+    cursor: pointer;
 }
 
 #two {
@@ -233,4 +245,42 @@ button {
           display: none;
     }
 
+}
+
+.page-transition__black {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background: #000;
+  }
+  /* .img {
+    position: absolute;
+    left: 0;
+    top: 0;
+  } */
+  .page-transition__red {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background: red;
+  }
+  .transition__logo {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 60px;
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    font-weight: bold;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+  }
+  .transition__logo .webLogo{
+    /* width: 150px; */
+    filter: brightness(0) invert(1);
 }

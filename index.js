@@ -67,7 +67,7 @@ TweenMax.from(".p2", 3, {
     ease: Expo.easeInOut
 });
 
-TweenMax.from("#one", 3, {
+TweenMax.from(".button", 3, {
     delay: 9.4,
     opacity: 0,
     y: 20,
@@ -80,91 +80,6 @@ TweenMax.from("#two", 3, {
     y: 20,
     ease: Expo.easeInOut
 });
-
-
-
-// TweenMax.to(".logo", 3, {
-//     delay: 14,
-//     opacity: 1,
-//     y: 20,
-//     ease: Expo.easeInOut
-// });
-
-// TweenMax.to(".contact", 3, {
-//     delay:14,
-//     opacity: 1,
-//     y: 20,
-//     ease: Expo.easeInOut
-// });
-
-// TweenMax.to(".options", 3, {
-//     delay: 14,
-//     opacity: 1,
-//     y: 20,
-//     ease: Expo.easeInOut
-// });
-
-// TweenMax.to(".bottom-text", 3, {
-//     delay:14,
-//     opacity: 1,
-//     y: 20,
-//     ease: Expo.easeInOut
-// });
-
-// TweenMax.to(".copyright", 3, {
-//     delay:14,
-//     opacity: 1,
-//     y: 20,
-//     ease: Expo.easeInOut
-// });
-
-// TweenMax.staggerto(".media ul li", 2, {
-//     delay:14,
-//     opacity: 1,
-//     y: 20,
-//     ease: Power3.easeInOut
-// }, 0.1);
-
-// TweenMax.to(".menu", 3, {
-//     delay:14,
-//     opacity: 1,
-//     y: 20,
-//     ease: Expo.easeInOut
-// });
-
-// TweenMax.to(".p1", 3, {
-//     delay: 14,
-//     opacity: 1,
-//     y: 20,
-//     ease: Expo.easeInOut
-// });
-
-// TweenMax.to(".p2", 3, {
-//     delay:14,
-//     opacity: 1,
-//     y: 20,
-//     ease: Expo.easeInOut
-// });
-
-// TweenMax.to("#one", 3, {
-//     delay:14,
-//     opacity: 1,
-//     y: 20,
-//     ease: Expo.easeInOut
-// });
-
-// TweenMax.to("#two", 3, {
-//     delay:14,
-//     opacity: 1,
-//     y: 20,
-//     ease: Expo.easeInOut
-// });
-// TweenMax.from(".letters", 3, {
-//     delay:14,
-//     opacity: 1,
-//     y: 20,
-//     ease: Expo.easeInOut
-// });
 
 var t1 = new TimelineMax();
 
@@ -203,4 +118,28 @@ easing: "easeOutExpo",
 delay: function(el, i) {
 return 9000 + 50 * i;
 }
+});
+
+
+const $preloader__screen = document.querySelector('.preloader__screen');
+const $logo = document.querySelector('.transition__logo');
+const $frameBlack = document.querySelector('.page-transition__black');
+const $frameRed = document.querySelector('.page-transition__red');
+const $button = document.querySelector('#button');
+
+let tltransition = new TimelineMax({paused:true})
+
+  .fromTo($frameRed , 2.2, {scaleX: 0},{scaleX: 1, transformOrigin:'left', ease: Power4.easeInOut},)
+  .fromTo($frameBlack , 2.2, {scaleX: 0},{scaleX: 1, transformOrigin:'left', ease: Power4.easeInOut},.2)
+  .fromTo($logo , 1.6, {xPercent: -100, autoAlpha:0 },{xPercent: 0, autoAlpha:1, ease: Power4.easeInOut},.7)
+  .set($frameRed, {scaleX:0})
+
+  .set($preloader__screen, {duration:3.2,autoAlpha:0})
+  .to($frameBlack , 2.2, {scaleX: 0, transformOrigin:'right', ease: Power4.easeInOut})
+  .to($logo , .2, {autoAlpha:0 },'-=1.2')
+  
+
+
+$button.addEventListener('click', () => {
+  tltransition.play(0);
 });
