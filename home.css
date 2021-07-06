@@ -20,6 +20,11 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+.menu_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .button{
     position: absolute;
     top: 50px;
@@ -39,7 +44,7 @@ body{
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: black;
+    background-color: #181818;
     transform: translateX(-100%);
 }
 .menu .button{
@@ -48,12 +53,12 @@ body{
 }
 .ul{
     position: absolute;
-    left: 20%;
     display: flex;
-    /* width: 300px; */
+    width:100%;
     justify-content: center;
     align-items: left;
-    height: 100vh;
+    height: 40vh;
+    margin-bottom: 100px;
     /* flex-direction: column; */
 }
 .ul li{
@@ -62,17 +67,18 @@ body{
     display: flex;
     align-items: center;
     justify-content:space-between;
+    
 }
 .ul li a{
     text-decoration: none;
     color: white;
     opacity:0.3;
     /* transition: 2s; */
-    font-family: 'Otomanopee One', sans-serif;
-    font-size: 50px;
-    margin: 0px 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size:40px;
+    margin: 0px 30px;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 300;
     mix-blend-mode: difference;
 
 }
@@ -81,27 +87,27 @@ body{
     bottom: 0;
     display: flex;
     justify-content: center;
-    height:100px;
+    height:150px;
     width: 100%;
-
+    /* margin-bottom: 100px; */
 }
 .social ul{
-    margin-left: 50px;
     display: flex;
-
+    list-style: none;
 }
 .social ul li{
-    margin: 0px 10px;
+    margin: 0px 25px;
 
 }
 .social ul li a{
     text-decoration: none;
     color: white;
-    font-family: 'Otomanopee One', sans-serif;
-    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
     text-transform: uppercase;
-    font-weight: lighter;
-
+    font-weight: 400;
+    opacity: 0.3;
+    
 }
 .bg{
     position: absolute;
@@ -159,7 +165,10 @@ body{
 }
 .ul li a:hover{
 
-    opacity:1;
+    opacity:1;  
+}
+.social ul li a:hover{
+    opacity:1;  
 }
 .webLogo{
     width: 150px;
