@@ -25,7 +25,7 @@ body{
     top: 50px;
     right: 100px;
     text-decoration: none;
-    color: white;
+    color: #FFD700;
     right: 100px;
     font-family: 'Dancing Script', cursive;
     font-size: 24px;
@@ -43,7 +43,7 @@ body{
     transform: translateX(-100%);
 }
 .menu .button{
-    color: white;
+    color: #FFD700;
 
 }
 .ul{
@@ -162,3 +162,5 @@ body{
     width: 150px;
     filter: brightness(0) invert(1);
 }
+
+
