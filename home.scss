@@ -1,46 +1,44 @@
-* {
+*{
   margin: 0;
   padding: 0;
-}
 
+}
 /*body{*/
 /*    overflow: hidden;*/
 /*    background-color: #1A191B;*/
 /*}*/
-.container {
+.container{
+
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 3;
 }
-
-.container .header_top {
+.container .header_top{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.menu_top {
+.menu_top{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.button {
+.button{
   position: absolute;
   top: 50px;
   right: 100px;
   text-decoration: none;
   color: #fff;
   right: 100px;
-  font-family: "Dancing Script", cursive;
+  font-family: 'Dancing Script', cursive;
   font-size: 20px;
   cursor: pointer;
   font-weight: bold;
-}
 
-.menu {
+}
+.menu{
   position: absolute;
   top: 0;
   left: 0;
@@ -50,81 +48,76 @@
   transform: translateX(-100%);
   z-index: 4;
 }
-
-.menu .button {
+.menu .button{
   color: #fff;
-}
 
-.ul {
+}
+.ul{
   position: absolute;
   display: flex;
-  width: 100%;
+  width:100%;
   justify-content: center;
   align-items: flex-start;
   height: 40vh;
   margin-bottom: 100px;
   /* flex-direction: column; */
 }
-
-.ul li {
+.ul li{
   margin: 20px 0;
   z-index: 2;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
+  justify-content:space-between;
 
-.ul li a {
+}
+.ul li a{
   text-decoration: none;
   color: white;
-  opacity: 0.3;
+  opacity:0.3;
   /* transition: 2s; */
-  font-family: "Open Sans", sans-serif;
-  font-size: 40px;
+  font-family: 'Open Sans', sans-serif;
+  font-size:40px;
   margin: 0px 30px;
   text-transform: uppercase;
   font-weight: 300;
   mix-blend-mode: difference;
-}
 
-.social {
+}
+.social{
   position: absolute;
   bottom: 0;
   display: flex;
   justify-content: center;
-  height: 150px;
+  height:150px;
   width: 100%;
   /* margin-bottom: 100px; */
 }
-
-.social ul {
+.social ul{
   display: flex;
   list-style: none;
 }
-
-.social ul li {
+.social ul li{
   margin: 0px 25px;
-}
 
-.social ul li a {
+}
+.social ul li a{
   text-decoration: none;
   color: white;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 400;
   opacity: 0.3;
-}
 
-.bg {
+}
+.bg{
   position: absolute;
   width: 250px;
   filter: grayscale(1);
   height: 300px;
   mix-blend-mode: difference;
 }
-
-.bg1 {
+.bg1{
   top: 45px;
   left: 80px;
   background: url(bg1.jpg) no-repeat 50% 50%;
@@ -133,8 +126,7 @@
   transform: translateY(-50%);
   transition: 1s ease-in-out;
 }
-
-.bg2 {
+.bg2{
   top: 100px;
   left: 150px;
   background: url(bg2.jpg) no-repeat 50% 50%;
@@ -142,9 +134,9 @@
   opacity: 0;
   transform: translateY(-50%);
   transition: 1s ease-in-out;
-}
 
-.bg3 {
+}
+.bg3{
   top: 250px;
   left: 200px;
   background: url(bg3.jpg) no-repeat 50% 50%;
@@ -152,9 +144,9 @@
   opacity: 0;
   transform: translateY(-50%);
   transition: 1s ease-in-out;
-}
 
-.bg4 {
+}
+.bg4{
   top: 400px;
   left: 200px;
   background: url(bg4.jpg) no-repeat 50% 50%;
@@ -162,28 +154,26 @@
   opacity: 0;
   transform: translateY(-50%);
   transition: 1s ease-in-out;
-}
 
+}
 .li1:hover ~ .bg1,
 .li2:hover ~ .bg2,
 .li3:hover ~ .bg3,
-.li4:hover ~ .bg4 {
+.li4:hover ~ .bg4{
   opacity: 1;
   transform: translateY(0%);
   transition: 1s ease-in-out;
 }
+.ul li a:hover{
 
-.ul li a:hover {
-  opacity: 1;
+  opacity:1;
 }
-
-.social ul li a:hover {
-  opacity: 1;
+.social ul li a:hover{
+  opacity:1;
 }
-
-.webLogo {
+.webLogo{
   width: 150px;
   filter: brightness(0) invert(1);
 }
 
-/*# sourceMappingURL=home.css.map */
+

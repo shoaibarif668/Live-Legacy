@@ -54,6 +54,22 @@
         opacity: 0;
     }
 }
+@keyframes cursorAnim4 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(2);
+    }
+    100% {
+        transform: scale(3);
+    }
+}
+
+.hoverExpand {
+    animation: cursorAnim4 .5s forwards;
+
+}
 
 .expand {
     animation: cursorAnim3 .5s forwards;
