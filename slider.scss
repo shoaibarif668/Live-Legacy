@@ -137,7 +137,7 @@ button {
 }
 
 .card {
-  --card-translateY-offset: 0vh;
+  --card-translateY-offset: 0vh !important;
 
   position: absolute;
   left: 50%;
