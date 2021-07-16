@@ -88,16 +88,16 @@ t1.from(".ringOne", 4, {
     opacity: 0,
     y:40,
     ease: Expo.easeInOut
-}).from(".ringTwo", 4, {
+}).from(".ringTwo",4, {
     delay: 0.9,
     opacity: 0,
     y: 40,
     ease: Expo.easeInOut
-}, "-=5").to(".ringOne", 4, {
+}, "-=5").to(".ringOne",4, {
     delay: 0.4,
     x: 40,
     ease: Expo.easeInOut
-}).to(".ringTwo", 4, {
+}).to(".ringTwo",4, {
     delay: 0.9,
     x: 40,
     ease: Expo.easeInOut
@@ -119,26 +119,6 @@ delay: function(el, i) {
 return 9000 + 50 * i;
 }
 });
-
-
-// const $preloader__screen = document.querySelector('.preloader__screen');
-// const $logo = document.querySelector('.transition__logo');
-// const $frameBlack = document.querySelector('.page-transition__black');
-// const $frameRed = document.querySelector('.page-transition__red');
-// const $button = document.querySelector('#button');
-
-// let tltransition = new TimelineMax({paused:true})
-
-//   .fromTo($frameRed , 2.2, {scaleX: 0},{scaleX: 1, transformOrigin:'left', ease: Power4.easeInOut},)
-//   .fromTo($frameBlack , 2.2, {scaleX: 0},{scaleX: 1, transformOrigin:'left', ease: Power4.easeInOut},.2)
-//   .fromTo($logo , 1.6, {xPercent: -100, autoAlpha:0 },{xPercent: 0, autoAlpha:1, ease: Power4.easeInOut},.7)
-//   .set($frameRed, {scaleX:0})
-
-//   .set($preloader__screen, {duration:3.2,autoAlpha:0})
-//   .to($frameBlack , 2.2, {scaleX: 0, transformOrigin:'right', ease: Power4.easeInOut})
-//   .to($logo , .2, {autoAlpha:0 },'-=1.2')
-  
-
 
 $button.addEventListener('click', () => {
   tltransition.play(0);

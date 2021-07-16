@@ -125,11 +125,10 @@ button:focus {
   width: 100%;
   height: 100%;
   perspective: 1000px;
-  margin-bottom: 1200px;
 }
 
 .card {
-  --card-translateY-offset: 100vh;
+  --card-translateY-offset: 0vh;
   position: absolute;
   left: 50%;
   top: 50%;
