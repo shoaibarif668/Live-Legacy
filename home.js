@@ -1,12 +1,12 @@
-var tl = gsap.timeline({
+let t_menu = gsap.timeline({
     paused: "true"
 });
-tl.to(".menu",{
+t_menu.to(".menu",{
     duration: 1,
     x: "0%",
     ease: Expo.easeInOut
 });
-tl.fromTo(".li",{
+t_menu.fromTo(".li",{
     y:"-100%",
     opacity: 0
 },{
@@ -15,7 +15,7 @@ tl.fromTo(".li",{
     y: "0%",
     stagger: 0.25
 });
-tl.fromTo(".social-li",{
+t_menu.fromTo(".social-li",{
     y:"-50%",
     opacity: 0
 },{
@@ -27,10 +27,10 @@ tl.fromTo(".social-li",{
 "-=0.5");
 
 function toggle(){
-    tl.play();
+    t_menu.play();
 }
 function togglec(){
-    tl.reverse();
+    t_menu.reverse();
 }
 const petRedirect = () =>{
     window.location = './InnerPages/PetMemorialPlaque.html';
