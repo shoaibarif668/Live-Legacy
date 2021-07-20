@@ -32,9 +32,12 @@ function toggle(){
 function togglec(){
     tl.reverse();
 }
-window.onbeforeunload = function() {
-    window.setTimeout(function () {
-        window.location = 'index.html';
-    }, 0);
-    window.onbeforeunload = null; // necessary to prevent infinite loop, that kills your browser
+const petRedirect = () =>{
+    window.location = './InnerPages/PetMemorialPlaque.html';
 }
+// window.onbeforeunload = function() {
+//     window.setTimeout(function () {
+//         window.location = 'index.html';
+//     }, 0);
+//     window.onbeforeunload = null; // necessary to prevent infinite loop, that kills your browser
+// }

@@ -119,7 +119,11 @@ delay: function(el, i) {
 return 9000 + 50 * i;
 }
 });
-
+setTimeout(
+    function(){
+        window.location.href="./home.html"
+    }, 11200);
 $button.addEventListener('click', () => {
   tltransition.play(0);
 });
+

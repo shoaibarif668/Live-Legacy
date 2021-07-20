@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+@keyframes move {
+  25% {
+    opacity: 1;
+
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+.pet__container{
+  .pet__banner{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: 50s para infinite linear;
+    background-image: url("../images/PetMemorial/banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 800;
+    overflow-x: hidden;
+    .banner__content{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      h1{
+        color: white;
+        font-weight: bold;
+        font-size: 52px;
+        text-align: center;
+      }
+      .chevron__bottom{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .chevron {
+          position: absolute;
+          width: 28px;
+          height: 8px;
+          opacity: 0;
+          transform: scale3d(0.5, 0.5, 0.5);
+          animation: move 3s ease-out infinite;
+        }
+
+        .chevron:first-child {
+          animation: move 3s ease-out 1s infinite;
+        }
+
+        .chevron:nth-child(2) {
+          animation: move 3s ease-out 2s infinite;
+        }
+
+        .chevron:before,
+        .chevron:after {
+          content: ' ';
+          position: absolute;
+          top: 0;
+          height: 100%;
+          width: 51%;
+          background: #fff;
+        }
+
+        .chevron:before {
+          left: 0;
+          transform: skew(0deg, 30deg);
+        }
+
+        .chevron:after {
+          right: 0;
+          width: 50%;
+          transform: skew(0deg, -30deg);
+        }
+      }
+    }
+  }
+}
+
+.banner__next__content{
+  padding: 50px 0px;
+  height: 350px;
+  line-height: 2rem;
+  background: rgba(0, 0, 0, 0.787);
+  display: flex;
+  align-items: center;
+  h2{
+  color: white;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .border__bottom{
+    border-bottom: 2px solid #fff;
+  }
+  p{
+    color: white;
+    font-weight: 500;
+  }
+}
+.banner__two{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: 50s para infinite linear;
+  background-image: url("../images/PetMemorial/banner-2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: 800;
+  overflow-x: hidden;
+}
