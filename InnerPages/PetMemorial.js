@@ -1,7 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 
 ScrollTrigger.defaults({
-    toggleActions:"restart pause resume complete"
+    toggleActions:"play  none none complete"
 });
 let tl2=gsap.timeline({
 
@@ -11,7 +11,6 @@ let tl2=gsap.timeline({
             scrollTrigger: {
                 trigger: ".banner__next__content",
                 start: "top center",
-                // end: "bottom center",
             },
 
     repeat: 0
