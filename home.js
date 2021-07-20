@@ -33,7 +33,7 @@ function togglec(){
     t_menu.reverse();
 }
 const petRedirect = () =>{
-    window.location = './InnerPages/PetMemorialPlaque.html';
+    window.location = './products/PetMemorialPlaque.html';
 }
 // window.onbeforeunload = function() {
 //     window.setTimeout(function () {
