@@ -332,6 +332,98 @@ button {
     --card-height: 400px;
   }
 }
+@media only screen and (max-width: 767px) {
+  .app{
+    .cardList{
+      width: 100vw;
+      .cards__wrapper{
+        .card.next--card {
+          display: none;
+        }
+        .card.previous--card {
+          display: none !important;
+        }
+      }
+      .cardList__btn{
+        transform: translateY(0%);
+      }
+      .cardList__btn.btn--right {
+        right: -2%;
+      }
+      .cardList__btn.btn--left {
+        left: -2%;
+      }
+    }
+    .infoList{
+      width: 100vw;
+      .info__wrapper{
+        justify-content: center;
+        .info{
+          margin-left: 0px;
+          h1.text.name {
+            font-size: 22px;
+            width: 100%;
+            text-align: center;
+          }
+          h4.text.location {
+            font-size: 22px !important;
+            --mg-left: 70px;
+            margin-left: 0px;
+            text-align: center;
+            width: 100%;
+
+          }
+          .back__1{
+            &::before{
+              left: 20%;
+              width: 15px;
+              height: 3px;
+            }
+            &::after{
+              left: 20%;
+            }
+          }
+          .back__2{
+            &::before{
+              left: 35%;
+              width: 15px;
+              height: 3px;
+            }
+            &::after{
+              left: 35%;
+            }
+          }
+          .back__3{
+            &::before{
+              left: 15%;
+              width: 15px;
+              height: 3px;
+            }
+            &::after{
+              left: 15%;
+            }
+          }
+          p.text.description {
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .app__bg{
+      .app__bg__image.previous--image {
+        display: none;
+      }
+      .app__bg__image.next--image {
+        display: none;
+      }
+    }
+  }
+  .loading__wrapper{
+    width: 100vw;
+    height: 100vh;
+  }
+}
 
 .support {
   position: absolute;

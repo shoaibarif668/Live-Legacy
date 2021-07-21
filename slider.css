@@ -302,6 +302,86 @@ button:focus {
     --card-height: 400px;
   }
 }
+@media only screen and (max-width: 767px) {
+  .app .cardList {
+    width: 100vw;
+  }
+  .app .cardList .cards__wrapper .card.next--card {
+    display: none;
+  }
+  .app .cardList .cards__wrapper .card.previous--card {
+    display: none !important;
+  }
+  .app .cardList .cardList__btn {
+    transform: translateY(0%);
+  }
+  .app .cardList .cardList__btn.btn--right {
+    right: -2%;
+  }
+  .app .cardList .cardList__btn.btn--left {
+    left: -2%;
+  }
+  .app .infoList {
+    width: 100vw;
+  }
+  .app .infoList .info__wrapper {
+    justify-content: center;
+  }
+  .app .infoList .info__wrapper .info {
+    margin-left: 0px;
+  }
+  .app .infoList .info__wrapper .info h1.text.name {
+    font-size: 22px;
+    width: 100%;
+    text-align: center;
+  }
+  .app .infoList .info__wrapper .info h4.text.location {
+    font-size: 22px !important;
+    --mg-left: 70px;
+    margin-left: 0px;
+    text-align: center;
+    width: 100%;
+  }
+  .app .infoList .info__wrapper .info .back__1::before {
+    left: 20%;
+    width: 15px;
+    height: 3px;
+  }
+  .app .infoList .info__wrapper .info .back__1::after {
+    left: 20%;
+  }
+  .app .infoList .info__wrapper .info .back__2::before {
+    left: 35%;
+    width: 15px;
+    height: 3px;
+  }
+  .app .infoList .info__wrapper .info .back__2::after {
+    left: 35%;
+  }
+  .app .infoList .info__wrapper .info .back__3::before {
+    left: 15%;
+    width: 15px;
+    height: 3px;
+  }
+  .app .infoList .info__wrapper .info .back__3::after {
+    left: 15%;
+  }
+  .app .infoList .info__wrapper .info p.text.description {
+    width: 100%;
+    text-align: center;
+  }
+  .app .app__bg .app__bg__image.previous--image {
+    display: none;
+  }
+  .app .app__bg .app__bg__image.next--image {
+    display: none;
+  }
+
+  .loading__wrapper {
+    width: 100vw;
+    height: 100vh;
+  }
+}
 .support {
   position: absolute;
   right: 10px;

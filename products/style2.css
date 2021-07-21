@@ -201,4 +201,52 @@
   color: white;
 }
 
+@media only screen and (max-width: 767px) {
+  .pet__container .pet__banner h1 {
+    font-size: 40px;
+  }
+
+  .banner__next__content p {
+    text-align: center;
+  }
+
+  .next__page .image__container .image__url {
+    height: 400px;
+    width: 600px;
+  }
+  .next__page .image__container .image__url a {
+    font-size: 36px;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .next__page .image__container .image__url {
+    height: 350px;
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .next__page .image__container .image__url {
+    height: 300px;
+    width: 420px;
+  }
+  .next__page .image__container .image__url a {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .next__page .image__container .image__url {
+    height: 250px;
+    width: 360px;
+  }
+  .next__page .image__container .image__url a {
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .next__page .image__container .image__url {
+    height: 220px;
+    width: 315px;
+  }
+}
+
 /*# sourceMappingURL=style2.css.map */

@@ -2,16 +2,9 @@ html, body {
     margin: 0%;
     padding: 0%;
     width: 100%;
-    
     background: #1A191B;
     overflow: hidden;
 }
-
-/* body {
-    background: url(hero.jpg) no-repeat 50% 50%;
-    background-size: cover;
-} */
-
 img {
     width: 100%;
 }
@@ -223,6 +216,7 @@ button {
     animation: rotateFirstRing 8s linear infinite;
 }
 
+
 @keyframes rotateFirstRing {
     from {
           transform: rotate(0deg);
@@ -232,19 +226,18 @@ button {
     }
 }
 
-@media(max-width: 900px) {
-
-    .loading-screen {
-          display: none;
+@media(max-width: 980px) {
+    .ml7{
+        font-size: 36px !important;
     }
-    .ring img {
-          display: none;
+}
+@media(max-width: 767px) {
+    .ml7{
+        font-size: 25px !important;
     }
-
-    .header p, button, .media, h1 {
-          display: none;
+    .ml7 .letter {
+        font-size: 10px !important;
     }
-
 }
 
 .page-transition__black {
