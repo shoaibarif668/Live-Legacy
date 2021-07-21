@@ -94,7 +94,6 @@
   right: 100px;
   text-decoration: none;
   color: #fff;
-  right: 100px;
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   cursor: pointer;
@@ -115,3 +114,16 @@
 }
 
 
+@media (max-width: 767px) {
+  .menu{
+    .ul{
+      flex-direction: column;
+      align-items: center;
+      li{
+        a{
+          font-size: 28px !important;
+        }
+      }
+    }
+  }
+}
