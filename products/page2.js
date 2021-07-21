@@ -4,7 +4,7 @@ ScrollTrigger.defaults({
     toggleActions: "play none none complete"
 });
 
-let tl = gsap.timeline(
+let tPag2__1 = gsap.timeline(
     {
         scrollTrigger: {
             trigger: "#banner__next__content",
@@ -13,7 +13,7 @@ let tl = gsap.timeline(
         repeat: 0
     }
 );
-let t2 = gsap.timeline(
+let tpage2__2 = gsap.timeline(
     {
         scrollTrigger: {
             trigger: "#banner__two__next__content",
@@ -22,7 +22,7 @@ let t2 = gsap.timeline(
         repeat: 0
     }
 );
-let t3 = gsap.timeline(
+let tpage2__3 = gsap.timeline(
     {
         scrollTrigger: {
             trigger: "#banner__three__next__content",
@@ -31,7 +31,7 @@ let t3 = gsap.timeline(
         repeat: 0
     }
 );
-tl.from("#border__bottom", {
+tPag2__1.from("#border__bottom", {
     x: -50,
     opacity: 0,
     duration: 1
@@ -46,7 +46,7 @@ tl.from("#border__bottom", {
         opacity: 0,
         duration: 1
     }, "-=1")
-t2.from("#border__bottom__two", {
+tpage2__2.from("#border__bottom__two", {
     x: -50,
     opacity: 0,
     duration: 1
@@ -61,7 +61,7 @@ t2.from("#border__bottom__two", {
         opacity: 0,
         duration: 1
     }, "-=1")
-t3.from("#border__bottom__three", {
+tpage2__3.from("#border__bottom__three", {
     x: -50,
     opacity: 0,
     duration: 1

@@ -35,6 +35,12 @@ function togglec(){
 const petRedirect = () =>{
     window.location = './products/PetMemorialPlaque.html';
 }
+const cremationRedirect = () =>{
+    window.location = './products/CremationPlaque.html';
+}
+const memorialRedirect = () =>{
+    window.location = './products/MemorialPlaque.html'
+}
 // window.onbeforeunload = function() {
 //     window.setTimeout(function () {
 //         window.location = 'index.html';
