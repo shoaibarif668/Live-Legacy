@@ -269,5 +269,15 @@
     bottom: -12%;
   }
 }
+@media only screen and (max-width: 768px) {
+  .testimonial__wrapper {
+    height: 100%;
+    overflow: hidden;
+    scroll-snap-type: none;
+  }
+  .testimonial__wrapper .testimonial-bg {
+    padding: 50px 0px;
+  }
+}
 
 /*# sourceMappingURL=testimonial.css.map */
