@@ -138,3 +138,18 @@
     }
   }
 }
+
+@media only screen and (max-width:768px){
+  .contact{
+    height: 100%;
+    overflow: hidden;
+    scroll-snap-type: none;
+    .contact__content{
+      height: 100%;
+      padding: 50px 0px;
+      .contact__description{
+        text-align: center;
+      }
+    }
+  }
+}

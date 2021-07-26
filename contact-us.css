@@ -138,4 +138,19 @@
   outline: none;
 }
 
+@media only screen and (max-width: 768px) {
+  .contact {
+    height: 100%;
+    overflow: hidden;
+    scroll-snap-type: none;
+  }
+  .contact .contact__content {
+    height: 100%;
+    padding: 50px 0px;
+  }
+  .contact .contact__content .contact__description {
+    text-align: center;
+  }
+}
+
 /*# sourceMappingURL=contact-us.css.map */
