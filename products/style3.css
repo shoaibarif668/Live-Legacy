@@ -1,8 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap");
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+@-webkit-keyframes move {
+  25% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+            transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
 }
 
 @keyframes move {
@@ -11,24 +33,35 @@
   }
   33% {
     opacity: 1;
-    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
   }
   67% {
     opacity: 1;
-    transform: translateY(40px);
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
   }
   100% {
     opacity: 0;
-    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+    -webkit-transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+            transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
   }
 }
+
 .pet__container .pet__banner {
   width: 100%;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: 50s para infinite linear;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: 50s para infinite linear;
+          animation: 50s para infinite linear;
   background-image: url("../images/MemorialPlaque/banner.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -37,56 +70,83 @@
   z-index: 800;
   overflow-x: hidden;
 }
+
 .pet__container .pet__banner .banner__content {
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .pet__container .pet__banner .banner__content h1 {
   color: white;
   font-weight: bold;
   font-size: 52px;
   text-align: center;
 }
+
 .pet__container .pet__banner .banner__content .chevron__bottom {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .pet__container .pet__banner .banner__content .chevron__bottom .chevron {
   position: absolute;
   width: 28px;
   height: 8px;
   opacity: 0;
-  transform: scale3d(0.5, 0.5, 0.5);
-  animation: move 3s ease-out infinite;
+  -webkit-transform: scale3d(0.5, 0.5, 0.5);
+          transform: scale3d(0.5, 0.5, 0.5);
+  -webkit-animation: move 3s ease-out infinite;
+          animation: move 3s ease-out infinite;
 }
+
 .pet__container .pet__banner .banner__content .chevron__bottom .chevron:first-child {
-  animation: move 3s ease-out 1s infinite;
+  -webkit-animation: move 3s ease-out 1s infinite;
+          animation: move 3s ease-out 1s infinite;
 }
+
 .pet__container .pet__banner .banner__content .chevron__bottom .chevron:nth-child(2) {
-  animation: move 3s ease-out 2s infinite;
+  -webkit-animation: move 3s ease-out 2s infinite;
+          animation: move 3s ease-out 2s infinite;
 }
+
 .pet__container .pet__banner .banner__content .chevron__bottom .chevron:before,
 .pet__container .pet__banner .banner__content .chevron__bottom .chevron:after {
-  content: " ";
+  content: ' ';
   position: absolute;
   top: 0;
   height: 100%;
   width: 51%;
   background: #fff;
 }
+
 .pet__container .pet__banner .banner__content .chevron__bottom .chevron:before {
   left: 0;
-  transform: skew(0deg, 30deg);
+  -webkit-transform: skew(0deg, 30deg);
+          transform: skew(0deg, 30deg);
 }
+
 .pet__container .pet__banner .banner__content .chevron__bottom .chevron:after {
   right: 0;
   width: 50%;
-  transform: skew(0deg, -30deg);
+  -webkit-transform: skew(0deg, -30deg);
+          transform: skew(0deg, -30deg);
 }
 
 .banner__next__content {
@@ -94,17 +154,24 @@
   height: 350px;
   line-height: 2rem;
   background: rgba(0, 0, 0, 0.787);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .banner__next__content h2 {
   color: white;
   text-align: center;
   padding-bottom: 10px;
 }
+
 .banner__next__content .border__bottom {
   border-bottom: 2px solid #fff;
 }
+
 .banner__next__content p {
   color: white;
   font-weight: 500;
@@ -113,10 +180,17 @@
 .banner__two {
   width: 100%;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: 50s para infinite linear;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: 50s para infinite linear;
+          animation: 50s para infinite linear;
   background-image: url("../images/MemorialPlaque/banner-2.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -129,10 +203,17 @@
 .banner__three {
   width: 100%;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: 50s para infinite linear;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: 50s para infinite linear;
+          animation: 50s para infinite linear;
   background-image: url("../images/MemorialPlaque/banner-3.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -146,14 +227,27 @@
   background: rgba(0, 0, 0, 0.787);
   width: 100%;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .next__page .image__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .next__page .image__container .image__url {
   position: relative;
   text-align: center;
@@ -163,38 +257,59 @@
   background-image: url("../images/PetMemorial/banner.png");
   background-repeat: no-repeat;
   background-position: center;
-  transition: transform 0.5s ease;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
 }
+
 .next__page .image__container .image__url:hover {
-  transition: transform 0.5s ease;
-  transform: scale(1.1);
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
+
 .next__page .image__container .image__url a {
   position: absolute;
   top: 50%;
   left: 50%;
   font-weight: bold;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   color: white;
   text-decoration: none;
   font-size: 40px;
 }
+
 .next__page .image__container .next__page__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
+
 .next__page .image__container .next__page__text p {
   color: white;
   font-weight: bold;
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
   margin-bottom: 0px;
   padding-top: 110px;
 }
+
 .next__page .arrow__right {
   margin-top: 25px;
   font-size: 20px;
 }
+
 .next__page .arrow__right::before {
   text-align: right;
   font-weight: bold;
@@ -205,11 +320,9 @@
   .pet__container .pet__banner h1 {
     font-size: 40px;
   }
-
   .banner__next__content p {
     text-align: center;
   }
-
   .next__page .image__container .image__url {
     height: 400px;
     width: 600px;
@@ -218,17 +331,18 @@
     font-size: 36px;
   }
 }
+
 @media only screen and (max-width: 620px) {
   .next__page .image__container .image__url {
     height: 350px;
     width: 500px;
   }
 }
+
 @media only screen and (max-width: 520px) {
   #banner__next__content {
     height: 450px !important;
   }
-
   .next__page .image__container .image__url {
     height: 300px;
     width: 420px;
@@ -237,6 +351,7 @@
     font-size: 30px;
   }
 }
+
 @media only screen and (max-width: 430px) {
   .next__page .image__container .image__url {
     height: 250px;
@@ -246,11 +361,11 @@
     font-size: 26px;
   }
 }
+
 @media only screen and (max-width: 370px) {
   .next__page .image__container .image__url {
     height: 220px;
     width: 315px;
   }
 }
-
 /*# sourceMappingURL=style3.css.map */

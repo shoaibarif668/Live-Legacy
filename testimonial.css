@@ -1,9 +1,30 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap");
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+@-webkit-keyframes move {
+  25% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+            transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
 }
 
 @keyframes move {
@@ -12,19 +33,24 @@
   }
   33% {
     opacity: 1;
-    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
   }
   67% {
     opacity: 1;
-    transform: translateY(40px);
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
   }
   100% {
     opacity: 0;
-    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+    -webkit-transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+            transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
   }
 }
+
 .testimonial__wrapper {
-  scroll-snap-type: y mandatory;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
   overflow: auto;
   height: 100vh;
 }
@@ -32,6 +58,7 @@
 .owl-controls.clickable {
   background: transparent !important;
 }
+
 .owl-controls.clickable .owl-buttons div {
   padding: 0px 10px !important;
 }
@@ -39,10 +66,17 @@
 .testimonial__banner {
   width: 100%;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: 50s para infinite linear;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: 50s para infinite linear;
+          animation: 50s para infinite linear;
   background-image: url("./images/extra/banner.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -52,56 +86,83 @@
   overflow-x: hidden;
   scroll-snap-align: start;
 }
+
 .testimonial__banner .banner__content {
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .testimonial__banner .banner__content h1 {
   color: white;
   font-weight: bold;
   font-size: 52px;
   text-align: center;
 }
+
 .testimonial__banner .banner__content .chevron__bottom {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .testimonial__banner .banner__content .chevron__bottom .chevron {
   position: absolute;
   width: 28px;
   height: 8px;
   opacity: 0;
-  transform: scale3d(0.5, 0.5, 0.5);
-  animation: move 3s ease-out infinite;
+  -webkit-transform: scale3d(0.5, 0.5, 0.5);
+          transform: scale3d(0.5, 0.5, 0.5);
+  -webkit-animation: move 3s ease-out infinite;
+          animation: move 3s ease-out infinite;
 }
+
 .testimonial__banner .banner__content .chevron__bottom .chevron:first-child {
-  animation: move 3s ease-out 1s infinite;
+  -webkit-animation: move 3s ease-out 1s infinite;
+          animation: move 3s ease-out 1s infinite;
 }
+
 .testimonial__banner .banner__content .chevron__bottom .chevron:nth-child(2) {
-  animation: move 3s ease-out 2s infinite;
+  -webkit-animation: move 3s ease-out 2s infinite;
+          animation: move 3s ease-out 2s infinite;
 }
+
 .testimonial__banner .banner__content .chevron__bottom .chevron:before,
 .testimonial__banner .banner__content .chevron__bottom .chevron:after {
-  content: " ";
+  content: ' ';
   position: absolute;
   top: 0;
   height: 100%;
   width: 51%;
   background: #fff;
 }
+
 .testimonial__banner .banner__content .chevron__bottom .chevron:before {
   left: 0;
-  transform: skew(0deg, 30deg);
+  -webkit-transform: skew(0deg, 30deg);
+          transform: skew(0deg, 30deg);
 }
+
 .testimonial__banner .banner__content .chevron__bottom .chevron:after {
   right: 0;
   width: 50%;
-  transform: skew(0deg, -30deg);
+  -webkit-transform: skew(0deg, -30deg);
+          transform: skew(0deg, -30deg);
 }
 
 .testimonial__content {
@@ -109,8 +170,12 @@
   height: 100vh;
   line-height: 2rem;
   background: rgba(0, 0, 0, 0.787);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   scroll-snap-align: start;
 }
 
@@ -122,7 +187,7 @@
 }
 
 .testimonial-bg:before {
-  content: "";
+  content: "\f10d";
   font-family: "fontawesome";
   width: 75px;
   height: 75px;
@@ -172,7 +237,8 @@
   left: 50%;
   border-bottom: 1px solid #ddd;
   border-right: 1px solid #ddd;
-  transform: translateX(-50%) rotate(45deg);
+  -webkit-transform: translateX(-50%) rotate(45deg);
+          transform: translateX(-50%) rotate(45deg);
 }
 
 .testimonial .pic {
@@ -223,7 +289,7 @@
 
 .owl-prev:before,
 .owl-next:before {
-  content: "";
+  content: "\f104";
   font-family: "fontawesome";
   font-size: 23px;
   font-weight: 700;
@@ -231,18 +297,18 @@
 }
 
 .owl-next:before {
-  content: "";
+  content: "\f105";
 }
 
 @media only screen and (max-width: 767px) {
   .testimonial-bg {
     padding: 50px 40px;
   }
-
   .owl-theme .owl-controls {
     bottom: -22%;
   }
 }
+
 @media only screen and (max-width: 480px) {
   .testimonial-bg:before {
     width: 55px;
@@ -250,34 +316,33 @@
     line-height: 55px;
     font-size: 40px;
   }
-
   .testimonial-bg {
     padding: 30px 10px;
   }
-
   .owl-theme .owl-controls {
     bottom: -15%;
   }
 }
+
 @media only screen and (max-width: 360px) {
   .testimonial .title,
-.testimonial .post {
+  .testimonial .post {
     font-size: 16px;
   }
-
   .owl-theme .owl-controls {
     bottom: -12%;
   }
 }
+
 @media only screen and (max-width: 768px) {
   .testimonial__wrapper {
     height: 100%;
     overflow: hidden;
-    scroll-snap-type: none;
+    -ms-scroll-snap-type: none;
+        scroll-snap-type: none;
   }
   .testimonial__wrapper .testimonial-bg {
     padding: 50px 0px;
   }
 }
-
 /*# sourceMappingURL=testimonial.css.map */
