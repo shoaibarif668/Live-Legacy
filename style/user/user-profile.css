@@ -1,0 +1,102 @@
+.profile__main__outer__wrapper {
+  padding: 50px 0px;
+}
+
+.profile__main__outer__wrapper .profile__left__wrapper {
+  border-right: 1px solid #eee;
+  padding: 30px 0px;
+}
+
+.profile__main__outer__wrapper .profile__left__wrapper .user__profile__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profile__main__outer__wrapper .profile__left__wrapper .user__profile__wrapper .user__profile__picture {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #fff;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+}
+
+.profile__main__outer__wrapper .profile__left__wrapper .user__profile__personal__info {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.profile__main__outer__wrapper .profile__left__wrapper .user__profile__personal__info h2 {
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 0px;
+}
+
+.profile__main__outer__wrapper .profile__left__wrapper .user__profile__dedicated__gallery {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.profile__main__outer__wrapper .profile__left__wrapper .user__profile__dedicated__gallery button {
+  margin-top: 10px;
+  border-radius: 4px;
+  height: 44px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+  padding: 0 30px;
+  letter-spacing: 1px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  border: none;
+  background-color: #fff;
+  color: #181818;
+  -webkit-box-shadow: 0 8px 24px 0 rgba(255, 235, 167, 0.2);
+          box-shadow: 0 8px 24px 0 rgba(255, 235, 167, 0.2);
+}
+
+.profile__main__outer__wrapper .profile__left__wrapper .user__profile__dedicated__gallery button:active, .profile__main__outer__wrapper .profile__left__wrapper .user__profile__dedicated__gallery button:focus {
+  outline: none;
+  background-color: #181818;
+  color: #fff;
+  -webkit-box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);
+          box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);
+}
+
+.profile__main__outer__wrapper .profile__left__wrapper .user__profile__dedicated__gallery button:hover {
+  background-color: #181818;
+  color: #fff;
+  -webkit-box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);
+          box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);
+}
+
+.profile__main__outer__wrapper .profile__right__wrapper h3 {
+  color: white;
+  padding: 30px 0px;
+  text-align: center;
+}
+
+.profile__main__outer__wrapper .profile__right__wrapper .qr__code__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=user-profile.css.map */

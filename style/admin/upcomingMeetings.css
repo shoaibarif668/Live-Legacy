@@ -1,0 +1,65 @@
+.upcoming__meetings__list {
+  padding: 20px 0px;
+}
+
+.upcoming__meetings__list .meeting__list__header {
+  margin: 0px 0px 20px 0px;
+}
+
+.upcoming__meetings__list .meeting__list__header h1 {
+  color: white;
+  font-weight: 500;
+  font-size: 40px;
+  font-family: "Poppins",sans-serif;
+}
+
+.upcoming__meetings__list .meeting__list__header p {
+  color: white;
+}
+
+.upcoming__meetings__list .meeting__list__body {
+  overflow-x: scroll;
+}
+
+.upcoming__meetings__list .meeting__list__body table tbody tr td button {
+  border-radius: 4px;
+  height: 44px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+  padding: 0 30px;
+  letter-spacing: 1px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  border: none;
+  background-color: #fff;
+  color: #181818;
+  -webkit-box-shadow: 0 8px 24px 0 rgba(255, 235, 167, 0.2);
+          box-shadow: 0 8px 24px 0 rgba(255, 235, 167, 0.2);
+}
+
+.upcoming__meetings__list .meeting__list__body table tbody tr td button:active, .upcoming__meetings__list .meeting__list__body table tbody tr td button:focus {
+  outline: none;
+  background-color: #181818;
+  color: #fff;
+  -webkit-box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);
+          box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);
+}
+
+.upcoming__meetings__list .meeting__list__body table tbody tr td button:hover {
+  background-color: #181818;
+  color: #fff;
+  -webkit-box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);
+          box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);
+}
+/*# sourceMappingURL=upcomingMeetings.css.map */

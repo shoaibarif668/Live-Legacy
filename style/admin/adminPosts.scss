@@ -1,0 +1,36 @@
+.post__modal__wrapper{
+    .modal-content{
+        background-color: #2a2b38;
+        background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg);
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        border-radius: 6px;
+        transform-style: preserve-3d;
+        backface-visibility: hidden;
+        .modal-header{
+          h5{
+            font-family: 'Poppins',sans-serif;
+            font-weight: bold;
+            color: white;
+          }
+          button{
+            span{
+              color: white;
+              font-weight: bold;
+            }
+            &:focus{
+              outline: none;
+            }
+          }
+        }
+        #post__body{
+            p{
+              color: white;
+              line-height: 1.65;
+            }
+            img,video{
+                width: 100%;
+            }
+        }
+    }
+}

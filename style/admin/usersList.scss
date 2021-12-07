@@ -1,0 +1,62 @@
+@import "../../mixin";
+
+.admin__dashboard__user__list{
+    padding: 20px 0px;
+    .user__list__header{
+        margin: 0px 0px 20px 0px;
+        h1{
+            color: white;
+            font-weight: 500;
+            font-size: 40px;
+            font-family: "Poppins",sans-serif;
+        }
+        p{
+            color: white;
+        }
+    }
+    .user__list__body{
+        table{
+            tbody{
+                tr{
+                    td{
+                        button{
+                            @include primary__btn;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.qr__modal__wrapper{
+    .modal-content{
+        background-color: #2a2b38;
+        background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg);
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        border-radius: 6px;
+        transform-style: preserve-3d;
+        backface-visibility: hidden;
+        .modal-header{
+          h5{
+            font-family: 'Poppins',sans-serif;
+            font-weight: bold;
+            color: white;
+          }
+          button{
+            span{
+              color: white;
+              font-weight: bold;
+            }
+            &:focus{
+              outline: none;
+            }
+          }
+        }
+            .qr__code__wrapper{
+                display: flex;
+                justify-content:center;
+            }
+        }
+        
+}

@@ -1,0 +1,96 @@
+@import "../../mixin";
+
+.set__profile__picture__wrapper{
+    padding: 50px 0px;
+    .set__profile__header{
+        margin: 0px 0px 20px 0px;
+        h1{
+            color: white;
+            font-weight: 500;
+            font-size: 40px;
+            font-family: "Poppins",sans-serif;
+        }
+        p{
+            color: white;
+        }
+    }
+    .set__profile__body{
+        form{
+            textarea,input{
+                padding: 25px;
+                width: 100%;
+                font-weight: 500;
+                border-radius: 4px;
+                font-size: 14px;
+                line-height: 22px;
+                letter-spacing: 0.5px;
+                outline: none;
+                color: #c4c3ca;
+                background-color: #1f2029;
+                border: none;
+                -webkit-transition: all 200ms linear;
+                transition: all 200ms linear;
+                box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
+                margin-bottom: 20px;
+                &:focus,&:active{
+                    border: none;
+                    outline: none;
+                    box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
+                }
+            }
+            input:-ms-input-placeholder,textarea:-ms-input-placeholder  {
+                color: #c4c3ca;
+                opacity: 0.7;
+                -webkit-transition: all 200ms linear;
+                transition: all 200ms linear;
+            }
+            input::-moz-placeholder,textarea::-moz-placeholder  {
+                color: #c4c3ca;
+                opacity: 0.7;
+                -webkit-transition: all 200ms linear;
+                transition: all 200ms linear;
+            }
+            input:-moz-placeholder,textarea:-moz-placeholder  {
+                color: #c4c3ca;
+                opacity: 0.7;
+                -webkit-transition: all 200ms linear;
+                transition: all 200ms linear;
+            }
+            input::-webkit-input-placeholder,textarea::-webkit-input-placeholder  {
+                color: #c4c3ca;
+                opacity: 0.7;
+                -webkit-transition: all 200ms linear;
+                transition: all 200ms linear;
+            }
+            input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder  {
+                opacity: 0;
+                -webkit-transition: all 200ms linear;
+                transition: all 200ms linear;
+            }
+            input:focus::-moz-placeholder,textarea:focus::-moz-placeholder  {
+                opacity: 0;
+                -webkit-transition: all 200ms linear;
+                transition: all 200ms linear;
+            }
+            input:focus:-moz-placeholder,textarea:focus:-moz-placeholder  {
+                opacity: 0;
+                -webkit-transition: all 200ms linear;
+                transition: all 200ms linear;
+            }
+            input:focus::-webkit-input-placeholder,textarea:focus::-webkit-input-placeholder  {
+                opacity: 0;
+                -webkit-transition: all 200ms linear;
+                transition: all 200ms linear;
+            }
+        }
+        .upload__picture{
+            margin: 20px 0px;
+        }
+        .btn__wrapper{
+            text-align: center;
+            button{
+                @include primary__btn;
+            }
+        }
+    }
+}

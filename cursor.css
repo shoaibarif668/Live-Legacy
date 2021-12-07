@@ -75,3 +75,9 @@
     animation: cursorAnim3 .5s forwards;
     border: 1px solid red;
 }
+
+
+.loading{
+  text-align: center;
+  margin-top: 10px;
+}

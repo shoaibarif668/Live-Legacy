@@ -1,0 +1,57 @@
+.toast {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 500px;
+}
+
+#adminLogin {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+#adminLogin .toast {
+  position: relative;
+  height: 100%;
+}
+
+#adminLogin .toast .toast-header, #adminLogin .toast .toast-body {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#userJoin, .userJoin {
+  top: 50%;
+}
+
+#userJoin .toast, .userJoin .toast {
+  position: relative;
+  height: 100%;
+  z-index: 1000;
+}
+
+#userJoin .toast .toast-header, #userJoin .toast .toast-body, .userJoin .toast .toast-header, .userJoin .toast .toast-body {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.userJoin {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=toast.css.map */

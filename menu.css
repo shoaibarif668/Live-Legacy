@@ -1,7 +1,38 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.787);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.787);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .menuContainer {
@@ -50,7 +81,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-    padding: 30px 0px 30px 20px;
 }
 
 .menu .ul {
@@ -85,7 +115,7 @@
   color: white;
   opacity: 0.3;
   font-family: 'Open Sans', sans-serif;
-  font-size: 40px;
+  font-size: 35px;
   margin: 0px 30px;
   text-transform: uppercase;
   font-weight: 300;
@@ -154,6 +184,10 @@
   padding: 20px 0px 20px 10px;
 }
 
+.menu_top {
+  padding: 20px 0px 20px 10px;
+}
+
 @media (max-width: 767px) {
   .menu .ul {
     -webkit-box-orient: vertical;
@@ -165,7 +199,34 @@
             align-items: center;
   }
   .menu .ul li a {
-    font-size: 28px !important;
+    font-size: 25px;
+  }
+  .menu .social ul li {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .menu .ul li {
+    margin: 10px 0px;
+  }
+  .menu .social ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .menu .social ul li a {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .menu .social ul li a {
+    font-size: 12px;
   }
 }
 /*# sourceMappingURL=menu.css.map */

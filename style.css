@@ -22,6 +22,7 @@ img {
     font-weight: bold;
     text-transform: uppercase;
     z-index: 1;
+    padding: 20px 0px 20px 10px;
 }
 
 .logo ion-icon {
@@ -33,7 +34,7 @@ img {
 }
 .logo .webLogo{
     width: 150px;
-    filter: brightness(0) invert(1);
+    /* filter: brightness(0) invert(1); */
 }
 a{
     text-decoration:none;

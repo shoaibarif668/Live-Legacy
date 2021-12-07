@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Legacy || Consult Us</title>
+    <link rel="stylesheet" href="./menu.css">
+    <link rel="stylesheet" href="./cursor.css">
+    <link rel="stylesheet" href="./consult.css">
+    <link rel="stylesheet" href="./style/toast.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"/>
+    <link rel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+</head>
+<body>
+<div class="cursor"></div>
+<div class="contact">
+    <section class="contact__banner" id="pet__banner">
+        <div class="menuContainer">
+            <div class="header_top">
+                <img src="./images/logo/livelegacy.png" alt="logo" class="webLogo"/>
+                <div class="button cursorEvent" onclick="toggle()">Menu</div>
+            </div>
+        </div>
+        <div class="menu" id="menuDataWrapper">
+        </div>
+        
+        <div class="banner__content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Book A Consultation</h1>
+                        <div class="chevron__bottom">
+                            <div class="chevron"></div>
+                            <div class="chevron"></div>
+                            <div class="chevron"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact__content" id="contact__content">
+        <div class="userJoin" style="position: absolute; top: 0px;">
+              
+            <!-- Success Toaster -->
+            <div class="toast bg-success text-white fade" id="success__toast">
+                <div class="toast-header bg-success text-white">
+                    <strong class="me-auto"><i class="fa fa-sign-out-alt"></i>Success!</strong>
+                </div>
+                <div class="toast-body" id="toast__body"></div>
+            </div>
+        </div>
+        <div class="userJoin" style="position: absolute; top: 0px;">
+      
+            <!-- Danger Toaster -->
+            <div class="toast bg-danger text-white fade" id="error__toast">
+                <div class="toast-header bg-danger text-white">
+                    <strong class="me-auto"><i class="fa fa-sign-out-alt"></i>Error!</strong>
+                </div>
+                <div class="toast-body" id="error__toast__body"></div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <!-- <div class="col-md-4">
+                    <div class="contact__description" id="contact__description">
+                        <h1>Consult Us</h1>
+                        <p>Some of the greatest things in life start with a simple conversation. 
+                            We welcome you to call, email, or simply consult with us using the form on the right.</p>
+                        <h2>Phone:</h2>
+                        <p>(858) 558-5650</p>
+                        <h2>Email:</h2>
+                        <p>info@Lorem ipsum.com</p>
+                    </div>
+
+                </div> -->
+                <div class="col-md-12">
+                    <form class="contact__form" id="consult__form">
+                        <div class="row">
+                            <div class="col-md-12">
+                               <div class="consult__header">
+                                    <h1>Meet Us In The Virtual World</h1>
+                                    <p>Schedule & start a meeting with us, using the magic button below.</p>
+                               </div>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" required name="name" placeholder="Name..." autocomplete="off"/>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="email" required name="email" placeholder="Email..." autocomplete="off"/>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" required name="topic" placeholder="Topic..." autocomplete="off"/>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" name="consultDate" value="" autocomplete="off" required/>
+
+                                <!-- <input type="date" required name="startTime" placeholder="Meeting Start Time..."/> -->
+                            </div>
+                            <div class="col-md-6">
+                                <select name="meetingTime" required>
+                                    <option></option>
+                                    <option disabled>Meeting Time</option>
+                                    <option>09:00</option>
+                                    <option>10:00</option>
+                                    <option>11:00</option>
+                                    <option>12:30</option>
+                                    <option>13:30</option>
+                                    <option>14:30</option>
+                                    <option>15:30</option>
+                                    <option>16:30</option>
+                                    <option>17:30</option>
+                                </select>
+                                <!-- <input type="date" required name="startTime" placeholder="Meeting Start Time..."/> -->
+                            </div>
+                            <div class="col-md-12">
+                                <textarea rows="3" required name="agenda" placeholder="Meeting Agenda..."></textarea>
+                            </div>
+                            <div class="col-md-3">
+                                <button type="submit">SUBMIT</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<!--JAVASCRIPT-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+<!--Axios-->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+
+<!-- jQuery library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="./javascript/menu.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+<script type="text/javascript" src="./javascript/config.js"></script>
+<script type="text/javascript" src="./javascript/consult.js"></script>
+<script type="text/javascript" src="./javascript/cursor.js"></script>
+<script type="text/javascript" src="./javascript/zoom.js" async></script>
+<script src="./javascript/home.js"></script>
+</body>
+</html>

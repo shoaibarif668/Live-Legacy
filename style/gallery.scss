@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap");
+@import "../mixin";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@keyframes move {
+  25% {
+    opacity: 1;
+
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+.join__us{
+  // scroll-snap-type: y mandatory;
+  overflow:auto;
+  // height: 100vh;
+}
+
+.join__banner{
+  @include banner("../images/extra/banner.png");
+  // scroll-snap-align: start;
+  .banner__content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1{
+      color: white;
+      font-weight: bold;
+      font-size: 52px;
+      text-align: center;
+    }
+    p{
+      text-align: center;
+      font-size: 20px;
+      color: white;
+    }
+    .chevron__bottom{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .chevron {
+        position: absolute;
+        width: 28px;
+        height: 8px;
+        opacity: 0;
+        transform: scale3d(0.5, 0.5, 0.5);
+        animation: move 3s ease-out infinite;
+      }
+
+      .chevron:first-child {
+        animation: move 3s ease-out 1s infinite;
+      }
+
+      .chevron:nth-child(2) {
+        animation: move 3s ease-out 2s infinite;
+      }
+
+      .chevron:before,
+      .chevron:after {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 51%;
+        background: #fff;
+      }
+
+      .chevron:before {
+        left: 0;
+        transform: skew(0deg, 30deg);
+      }
+
+      .chevron:after {
+        right: 0;
+        width: 50%;
+        transform: skew(0deg, -30deg);
+      }
+    }
+  }
+}
+.no__image__wrapper{
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+  h2{
+    color: white;
+    font-weight: 500;
+    font-size: 40px;
+    font-family: "Poppins",sans-serif; 
+  }
+  h5{
+      color: white;
+      font-weight: 500;
+      font-family: "Poppins",sans-serif; 
+  }
+}
+.gallery__content{
+  height:100%;
+  line-height: 2rem;
+  background: rgba(0, 0, 0, 0.787);
+  // scroll-snap-align: start;
+  padding: 50px 0px;
+  position: relative;
+  width: 100%;
+  display: block;
+  font-family: "Poppins",sans-serif;
+
+  .gallery__header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    h1{
+      color: white;
+      font-weight: 500;
+    }
+    small{
+      color: white;
+    }
+    .gallery__tabs{
+      display: flex;
+      align-items: center;
+      ul{
+        padding: 5px 10px;
+        li{
+          a{
+            text-decoration: none;
+            margin-right: 10px;
+            background:#fff;
+            color: #000;
+            border-radius: 25px;
+            font-weight: 600;
+            padding: 10px 25px;
+          }
+          .active{
+            color: #fff;
+            background:#000;
+            text-decoration: underline;
+            border: 1px solid #fff;
+          }
+        }
+      }
+    }
+  }
+
+    
+    .gallery__image__wrapper{
+      position: relative;
+      transition:0.6s;
+      margin-bottom: 30px;
+      .gallery__image{
+        //   button{
+        //     border: none;
+        //     &:focus{
+        //       outline: none;
+        //     }
+            img{
+              width: 100%;
+              border-top-left-radius: 10px;
+              border-top-right-radius: 10px;
+          
+            }
+            video{
+              width:100%;
+              border-top-left-radius: 10px;
+              border-top-right-radius: 10px;
+          
+            }
+        //   }
+        }
+      .gallery__description {
+        background: white;
+        padding: 30px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        p{
+            margin: 0;
+            color:#181818;
+            font-weight: 300;
+            line-height: 1.65;
+            color: #3a4651;
+        }
+      }
+      .status__wrapper{
+          border-radius: 10px !important;
+      }
+      .text{
+        position: absolute;
+        text-transform: capitalize;
+        bottom: 8px;
+        color: white;
+        padding: 10px;
+        background:#181818;
+        right: 16px;
+        button{
+            border:none;
+            background-color: transparent;
+            color: white;
+            &:focus{
+                outline: none;
+            }
+        }
+      }
+    }
+    
+  
+}
+
+@media only screen and (max-width:768px){
+  .join__us{
+    height: 100%;
+    overflow: hidden;
+    scroll-snap-type: none;
+    .gallery__content{
+      height: 100%;
+      padding: 50px 0px;
+    }
+  }
+}

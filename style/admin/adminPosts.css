@@ -1,0 +1,36 @@
+.post__modal__wrapper .modal-content {
+  background-color: #2a2b38;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  border-radius: 6px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.post__modal__wrapper .modal-content .modal-header h5 {
+  font-family: 'Poppins',sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+.post__modal__wrapper .modal-content .modal-header button span {
+  color: white;
+  font-weight: bold;
+}
+
+.post__modal__wrapper .modal-content .modal-header button:focus {
+  outline: none;
+}
+
+.post__modal__wrapper .modal-content #post__body p {
+  color: white;
+  line-height: 1.65;
+}
+
+.post__modal__wrapper .modal-content #post__body img, .post__modal__wrapper .modal-content #post__body video {
+  width: 100%;
+}
+/*# sourceMappingURL=adminPosts.css.map */

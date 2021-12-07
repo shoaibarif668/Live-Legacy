@@ -1,0 +1,147 @@
+.set__profile__picture__wrapper {
+  padding: 50px 0px;
+}
+
+.set__profile__picture__wrapper .set__profile__header {
+  margin: 0px 0px 20px 0px;
+}
+
+.set__profile__picture__wrapper .set__profile__header h1 {
+  color: white;
+  font-weight: 500;
+  font-size: 40px;
+  font-family: "Poppins",sans-serif;
+}
+
+.set__profile__picture__wrapper .set__profile__header p {
+  color: white;
+}
+
+.set__profile__picture__wrapper .set__profile__body form textarea, .set__profile__picture__wrapper .set__profile__body form input {
+  padding: 25px;
+  width: 100%;
+  font-weight: 500;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  outline: none;
+  color: #c4c3ca;
+  background-color: #1f2029;
+  border: none;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(21, 21, 21, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(21, 21, 21, 0.2);
+  margin-bottom: 20px;
+}
+
+.set__profile__picture__wrapper .set__profile__body form textarea:focus, .set__profile__picture__wrapper .set__profile__body form textarea:active, .set__profile__picture__wrapper .set__profile__body form input:focus, .set__profile__picture__wrapper .set__profile__body form input:active {
+  border: none;
+  outline: none;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(21, 21, 21, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(21, 21, 21, 0.2);
+}
+
+.set__profile__picture__wrapper .set__profile__body form input:-ms-input-placeholder, .set__profile__picture__wrapper .set__profile__body form textarea:-ms-input-placeholder {
+  color: #c4c3ca;
+  opacity: 0.7;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.set__profile__picture__wrapper .set__profile__body form input::-moz-placeholder, .set__profile__picture__wrapper .set__profile__body form textarea::-moz-placeholder {
+  color: #c4c3ca;
+  opacity: 0.7;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.set__profile__picture__wrapper .set__profile__body form input:-moz-placeholder, .set__profile__picture__wrapper .set__profile__body form textarea:-moz-placeholder {
+  color: #c4c3ca;
+  opacity: 0.7;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.set__profile__picture__wrapper .set__profile__body form input::-webkit-input-placeholder, .set__profile__picture__wrapper .set__profile__body form textarea::-webkit-input-placeholder {
+  color: #c4c3ca;
+  opacity: 0.7;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.set__profile__picture__wrapper .set__profile__body form input:focus:-ms-input-placeholder, .set__profile__picture__wrapper .set__profile__body form textarea:focus:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.set__profile__picture__wrapper .set__profile__body form input:focus::-moz-placeholder, .set__profile__picture__wrapper .set__profile__body form textarea:focus::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.set__profile__picture__wrapper .set__profile__body form input:focus:-moz-placeholder, .set__profile__picture__wrapper .set__profile__body form textarea:focus:-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.set__profile__picture__wrapper .set__profile__body form input:focus::-webkit-input-placeholder, .set__profile__picture__wrapper .set__profile__body form textarea:focus::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.set__profile__picture__wrapper .set__profile__body .upload__picture {
+  margin: 20px 0px;
+}
+
+.set__profile__picture__wrapper .set__profile__body .btn__wrapper {
+  text-align: center;
+}
+
+.set__profile__picture__wrapper .set__profile__body .btn__wrapper button {
+  border-radius: 4px;
+  height: 44px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+  padding: 0 30px;
+  letter-spacing: 1px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  border: none;
+  background-color: #fff;
+  color: #181818;
+  -webkit-box-shadow: 0 8px 24px 0 rgba(255, 235, 167, 0.2);
+          box-shadow: 0 8px 24px 0 rgba(255, 235, 167, 0.2);
+}
+
+.set__profile__picture__wrapper .set__profile__body .btn__wrapper button:active, .set__profile__picture__wrapper .set__profile__body .btn__wrapper button:focus {
+  outline: none;
+  background-color: #181818;
+  color: #fff;
+  -webkit-box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);
+          box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);
+}
+
+.set__profile__picture__wrapper .set__profile__body .btn__wrapper button:hover {
+  background-color: #181818;
+  color: #fff;
+  -webkit-box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);
+          box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);
+}
+/*# sourceMappingURL=setHeader.css.map */

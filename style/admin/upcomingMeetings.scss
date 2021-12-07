@@ -1,0 +1,31 @@
+@import "../../mixin";
+
+.upcoming__meetings__list{
+    padding: 20px 0px;
+    .meeting__list__header{
+        margin: 0px 0px 20px 0px;
+        h1{
+            color: white;
+            font-weight: 500;
+            font-size: 40px;
+            font-family: "Poppins",sans-serif;
+        }
+        p{
+            color: white;
+        }
+    }
+    .meeting__list__body{
+        overflow-x: scroll;
+        table{
+            tbody{
+                tr{
+                    td{
+                        button{
+                            @include primary__btn;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

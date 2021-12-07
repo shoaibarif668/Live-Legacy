@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Live Legacy || Upload Status</title>
+        <link rel="stylesheet" href="../menu.css" />
+        <link rel="stylesheet" href="../cursor.css" />
+        <link rel="stylesheet" href="../style/dashboard.css" />
+        <link rel="stylesheet" href="../style/user/setProfilePicture.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+        <!-- Fonts -->
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"
+        />
+        <link
+          rel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+          rel="stylesheet"
+        />
+    
+        <!-- Styles -->
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link
+          rel="stylesheet"
+          href="./style/toast.css"
+        />
+        <link
+          rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        />
+        <link
+          rel="stylesheet"
+          href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Filepond -->
+        <link href="https://unpkg.com/filepond@^4/dist/filepond.css" rel="stylesheet" />
+        <link
+        href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css"
+        rel="stylesheet"
+        />
+    </head>
+  <body>
+    
+    <div class="cursor"></div>
+    <div class="user__layout__wrapper">
+        <div style="position: absolute; top: 0px; right: 0px;">
+      
+            <!-- Logout Toaster -->
+            <div class="toast bg-success text-white fade" id="logoutToast" >
+                <div class="toast-header bg-success text-white">
+                    <strong class="me-auto"><i class="fa fa-sign-out-alt"></i> Logout</strong>
+                </div>
+                <div class="toast-body">
+                    You Have Successfully Logged Out
+                </div>
+            </div>
+        </div>
+        <div style="position: absolute; top: 0px; right: 0px;">
+      
+            <!-- Success Toaster -->
+            <div class="toast bg-success text-white fade" id="success__toast">
+                <div class="toast-header bg-success text-white">
+                    <strong class="me-auto"><i class="fa fa-sign-out-alt"></i>Success!</strong>
+                </div>
+                <div class="toast-body" id="toast__body"></div>
+            </div>
+        </div>
+        <div style="position: absolute; top: 0px; right: 0px;">
+      
+            <!-- Error Toaster -->
+            <div class="toast bg-danger text-white fade" id="error__toast">
+                <div class="toast-header bg-danger text-white">
+                    <strong class="me-auto"><i class="fa fa-sign-out-alt"></i>Error!</strong>
+                </div>
+                <div class="toast-body" id="error__toast__body"></div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 col-xs-2" id="sidebar-wrapper">      
+                    <nav class="d-md-block sidebar">
+                      <div class="sidebar-sticky"></div>
+                      <div class="sidebar__logo">
+                          <img src="../images/logo/livelegacy.png" alt="logo">
+                      </div>
+                      <div class="sidebar__menu__items">
+                        <div id="sidebarWrapper"></div>
+                        <div class="profile__information">
+                          <div class="profile__information__inner">
+                            <div class="profile__row">
+                              <div class="profile__picture" id="profile__picture">
+                              </div>
+                              <p id="user__name"></p>
+                            </div>
+                            <div class="logout__btn">
+                              <button onclick="logout()">Logout</button>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </nav>
+                  </div>
+                <div class="col-md-9 col-xs-10" id="page-content-wrapper">
+                    <div class="set__profile__picture__wrapper">
+                        <div class="set__profile__header">
+                            <h1>UPLOAD Status</h1>
+                        </div>
+                        <div class="set__profile__body">
+                            <form id="status__upload__form">
+                              <textarea 
+                              rows="5"
+                              name="description"
+                              class="form-style"
+                              placeholder="Your Status"
+                              id="description"
+                              autocomplete="off"></textarea>
+                              
+                            </form>  
+                            <div class="btn__wrapper">
+                                <button onclick="uploadStatus()">Upload Status</button>
+                            </div> 
+                            <div class="loading" id="loader">
+                                <div class="spinner-border text-light" role="status">
+                                  <span class="sr-only">Loading...</span>
+                                </div>
+                              </div>     
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      
+    <!--JAVASCRIPT-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+
+    <!--Axios-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <!-- jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Config File -->
+    <script type="text/javascript" src="../javascript/config.js"></script>
+    <!-- Checking If Auth Is Valid -->
+    <script type="text/javascript" src="../javascript/user/userSubLogout.js"></script>
+    <script type="text/javascript" src="../javascript/checkAuth.js"></script>
+    <!-- Cursor JS -->
+    <script type="text/javascript" src="../javascript/cursor.js"></script>
+    
+    <script type="text/javascript" src="../javascript/user/uploadStatus.js"></script>
+    <script type="text/javascript" src="../javascript/user/userSidebar.js"></script>
+    <script type="text/javascript" src="../javascript/dashboard.js"></script>
+    <script src="../javascript/home.js"></script>   
+    
+  </body>
+</html>

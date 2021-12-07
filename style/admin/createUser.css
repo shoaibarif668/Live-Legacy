@@ -1,0 +1,236 @@
+.profile__wrapper {
+  padding: 50px 0px;
+}
+
+.profile__wrapper .profile__header {
+  margin: 0px 0px 20px 0px;
+}
+
+.profile__wrapper .profile__header h1 {
+  color: white;
+  font-weight: 500;
+  font-size: 40px;
+  font-family: "Poppins",sans-serif;
+}
+
+.profile__wrapper .profile__header p {
+  color: white;
+}
+
+.profile__wrapper .profile__body .profile__info__wrapper form .form-group,
+.profile__wrapper .profile__body .password__wrapper form .form-group {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.profile__wrapper .profile__body .profile__info__wrapper form .form-group input:-ms-input-placeholder, .profile__wrapper .profile__body .profile__info__wrapper form .form-group textarea:-ms-input-placeholder,
+.profile__wrapper .profile__body .password__wrapper form .form-group input:-ms-input-placeholder,
+.profile__wrapper .profile__body .password__wrapper form .form-group textarea:-ms-input-placeholder {
+  color: #c4c3ca;
+  opacity: 0.7;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.profile__wrapper .profile__body .profile__info__wrapper form .form-group input::-moz-placeholder, .profile__wrapper .profile__body .profile__info__wrapper form .form-group textarea::-moz-placeholder,
+.profile__wrapper .profile__body .password__wrapper form .form-group input::-moz-placeholder,
+.profile__wrapper .profile__body .password__wrapper form .form-group textarea::-moz-placeholder {
+  color: #c4c3ca;
+  opacity: 0.7;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.profile__wrapper .profile__body .profile__info__wrapper form .form-group input:-moz-placeholder, .profile__wrapper .profile__body .profile__info__wrapper form .form-group textarea:-moz-placeholder,
+.profile__wrapper .profile__body .password__wrapper form .form-group input:-moz-placeholder,
+.profile__wrapper .profile__body .password__wrapper form .form-group textarea:-moz-placeholder {
+  color: #c4c3ca;
+  opacity: 0.7;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.profile__wrapper .profile__body .profile__info__wrapper form .form-group input::-webkit-input-placeholder, .profile__wrapper .profile__body .profile__info__wrapper form .form-group textarea::-webkit-input-placeholder,
+.profile__wrapper .profile__body .password__wrapper form .form-group input::-webkit-input-placeholder,
+.profile__wrapper .profile__body .password__wrapper form .form-group textarea::-webkit-input-placeholder {
+  color: #c4c3ca;
+  opacity: 0.7;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.profile__wrapper .profile__body .profile__info__wrapper form .form-group input:focus:-ms-input-placeholder, .profile__wrapper .profile__body .profile__info__wrapper form .form-group textarea:focus:-ms-input-placeholder,
+.profile__wrapper .profile__body .password__wrapper form .form-group input:focus:-ms-input-placeholder,
+.profile__wrapper .profile__body .password__wrapper form .form-group textarea:focus:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.profile__wrapper .profile__body .profile__info__wrapper form .form-group input:focus::-moz-placeholder, .profile__wrapper .profile__body .profile__info__wrapper form .form-group textarea:focus::-moz-placeholder,
+.profile__wrapper .profile__body .password__wrapper form .form-group input:focus::-moz-placeholder,
+.profile__wrapper .profile__body .password__wrapper form .form-group textarea:focus::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.profile__wrapper .profile__body .profile__info__wrapper form .form-group input:focus:-moz-placeholder, .profile__wrapper .profile__body .profile__info__wrapper form .form-group textarea:focus:-moz-placeholder,
+.profile__wrapper .profile__body .password__wrapper form .form-group input:focus:-moz-placeholder,
+.profile__wrapper .profile__body .password__wrapper form .form-group textarea:focus:-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.profile__wrapper .profile__body .profile__info__wrapper form .form-group input:focus::-webkit-input-placeholder, .profile__wrapper .profile__body .profile__info__wrapper form .form-group textarea:focus::-webkit-input-placeholder,
+.profile__wrapper .profile__body .password__wrapper form .form-group input:focus::-webkit-input-placeholder,
+.profile__wrapper .profile__body .password__wrapper form .form-group textarea:focus::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.profile__wrapper .profile__body .profile__info__wrapper form .form-group .form-style,
+.profile__wrapper .profile__body .password__wrapper form .form-group .form-style {
+  padding: 13px 20px;
+  padding-left: 55px;
+  height: 48px;
+  width: 100%;
+  font-weight: 500;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  outline: none;
+  color: #c4c3ca;
+  background-color: #1f2029;
+  border: none;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(21, 21, 21, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(21, 21, 21, 0.2);
+}
+
+.profile__wrapper .profile__body .profile__info__wrapper form .form-group .form-style:focus, .profile__wrapper .profile__body .profile__info__wrapper form .form-group .form-style:active,
+.profile__wrapper .profile__body .password__wrapper form .form-group .form-style:focus,
+.profile__wrapper .profile__body .password__wrapper form .form-group .form-style:active {
+  border: none;
+  outline: none;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(21, 21, 21, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(21, 21, 21, 0.2);
+}
+
+.profile__wrapper .profile__body .profile__info__wrapper form .form-group .input-icon,
+.profile__wrapper .profile__body .password__wrapper form .form-group .input-icon {
+  position: absolute;
+  top: 0;
+  left: 18px;
+  height: 48px;
+  font-size: 24px;
+  line-height: 48px;
+  text-align: left;
+  color: #fff;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.profile__wrapper .profile__body .profile__info__wrapper form .btn,
+.profile__wrapper .profile__body .password__wrapper form .btn {
+  border-radius: 4px;
+  height: 44px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+  padding: 0 30px;
+  letter-spacing: 1px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  border: none;
+  background-color: #fff;
+  color: #181818;
+  -webkit-box-shadow: 0 8px 24px 0 rgba(255, 235, 167, 0.2);
+          box-shadow: 0 8px 24px 0 rgba(255, 235, 167, 0.2);
+}
+
+.profile__wrapper .profile__body .profile__info__wrapper form .btn:active, .profile__wrapper .profile__body .profile__info__wrapper form .btn:focus,
+.profile__wrapper .profile__body .password__wrapper form .btn:active,
+.profile__wrapper .profile__body .password__wrapper form .btn:focus {
+  background-color: #181818;
+  color: #fff;
+  -webkit-box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);
+          box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);
+}
+
+.profile__wrapper .profile__body .profile__info__wrapper form .btn:hover,
+.profile__wrapper .profile__body .password__wrapper form .btn:hover {
+  background-color: #181818;
+  color: #fff;
+  -webkit-box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);
+          box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);
+}
+
+.profile__wrapper .profile__body .profile__info__wrapper {
+  margin-bottom: 20px;
+}
+
+.profile__wrapper .profile__body .profile__info__wrapper form .form__group__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.profile__wrapper .profile__body .profile__info__wrapper form .form__group__wrapper .form-group {
+  width: 100%;
+}
+
+.profile__wrapper .profile__body .profile__info__wrapper form .form__group__wrapper .form-group .form-style {
+  width: 100%;
+}
+
+.profile__wrapper .profile__body .profile__info__wrapper form .form__group__wrapper .form-group:nth-child(1) {
+  margin-right: 10px;
+}
+
+.profile__wrapper .profile__body .password__wrapper form .form__group__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.profile__wrapper .profile__body .password__wrapper form .form__group__wrapper .form-group {
+  width: 100%;
+}
+
+.profile__wrapper .profile__body .password__wrapper form .form__group__wrapper .form-group .form-style {
+  width: 100%;
+}
+
+.profile__wrapper .profile__body .password__wrapper form .form__group__wrapper .form-group:nth-child(1), .profile__wrapper .profile__body .password__wrapper form .form__group__wrapper .form-group:nth-child(2) {
+  margin-right: 10px;
+}
+/*# sourceMappingURL=createUser.css.map */
