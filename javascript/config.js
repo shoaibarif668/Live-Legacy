@@ -1,7 +1,7 @@
 
-var baseUrl = "http://173.82.185.13:4000";
-var imageUrl = "http://173.82.185.13/livelegacyimages/";
-var videoUrl = "http://173.82.185.13/livelegacyvideos/";
+var baseUrl = "https://livelegacygallery.mytap.pro";
+var imageUrl = "https://livelegacygallery.mytap.pro/livelegacyimages/";
+var videoUrl = "https://livelegacygallery.mytap.pro/livelegacyvideos/";
 var auth = localStorage.getItem("auth")
 var userData = JSON.parse(localStorage.getItem("data"))
 
